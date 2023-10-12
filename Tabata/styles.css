@@ -1,0 +1,149 @@
+/* 
+    Contributors: Jun Kim
+    Class: IT 325
+    Assignment: Hiit / Tabata
+    Due Date: 10/11/2023
+    Instructor: Dr. Reeves
+
+    CSS to style and position elements of the page
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333333;
+}
+
+.timer-container {
+  text-align: center;
+  margin-bottom: 30px;
+  color: azure;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  /* background-color: #cc99ff; */
+  /* background-color: rgba(204, 153, 255, 0.9); */
+  border-width: 3px;
+  border-style: ridge;
+  border-color: #cc99ff;
+  color: white;
+  padding: 10px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+.rc-container {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  border-color: #cc99ff;
+  border-width: 3px;
+  border-style: ridge;
+  padding: 10px;
+  align-content: center;
+  /* padding-top: 7px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px; */
+}
+
+.input-container label {
+  margin-right: 10px;
+  width: 160px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.input-container input {
+  padding: 5px;
+  flex: 1;
+  max-width: 110px;
+  font-size: 12px;
+}
+
+#startPauseButton {
+  margin-top: 10px;
+  font-size: 22px;
+  height: 40px;
+  width: 140px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  color: #00cc33;
+  text-align: center;
+  opacity: 80%;
+}
+#resetButton {
+  margin-top: 10px;
+  font-size: 22px;
+  height: 40px;
+  width: 140px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  color: #ff0033;
+  text-align: center;
+  opacity: 80%;
+}
+
+#timer-display {
+  font-size: 200px;
+  margin-bottom: 0px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#rounds-display {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+#cycles-display {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+#phase-display {
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#playButton {
+  font-size: 12px;
+  padding: 4.5px 52px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+#playButton:hover {
+  background-color: #cc99ff;
+}
+
+#heading {
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #cc99ff;
+  font-style: oblique;
+  font-weight: bold;
+}

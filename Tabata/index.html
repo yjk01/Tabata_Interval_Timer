@@ -1,0 +1,61 @@
+<!-- 
+    Contributors: Jun Kim
+    Class: IT 325
+    Assignment: Hiit / Tabata
+    Due Date: 10/11/2023
+    Instructor: Dr. Reeves
+
+    HTML for the basic outline of the Tabata Timer-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiit / Tabata</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="heading"> Hiit/Tabata Interval Timer</h1>
+    <div class="timer-container">
+        <div id="timer-display">00:00</div>
+        <div id="phase-display">Phase</div>
+    </div>
+    <div class="rc-container">
+        <div id="rounds-display">Rounds left: 0</div>
+        <div id="cycles-display">Cycles left: 0</div>
+    </div>
+    <div class="button-container">
+        <button id="startPauseButton">Start</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <div class="settings-container">
+        <div class="input-container">
+            <label for="prepTime">Preparation Duration(s):</label>
+            <input type="number" id="prepTime" placeholder="Enter in seconds">
+        </div>
+        <div class="input-container">
+            <label for="workoutTime">Workout Duration(s):</label>
+            <input type="number" id="workoutTime" placeholder="Enter in seconds">
+        </div>
+        <div class="input-container">
+            <label for="breakTime">Break Duration(s):</label>
+            <input type="number" id="breakTime" placeholder="Enter in seconds">
+        </div>
+        <div class="input-container">
+            <label for="numRounds">Number of Rounds:</label>
+            <input type="number" id="numRounds" placeholder="Enter a number">
+        </div>
+        <div class="input-container">
+            <label for="numCycles">Number of Cycles:</label>
+            <input type="number" id="numCycles" placeholder="Enter a number">
+        </div>
+        <div class="input-container">
+            <label for="audioPlayer">Music: </label>
+            <button id="playButton">ON</button>
+            <audio id="audioPlayer" src="audio/Classic Mariachi - Jimena Contreras.mp3"></audio>    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
